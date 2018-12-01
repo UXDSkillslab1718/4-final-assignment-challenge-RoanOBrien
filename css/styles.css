@@ -9,19 +9,19 @@ html {
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Times New Roman', sans-serif;
     margin: 0;
     color: cadetblue;
 }
 a {
-    color: #EF233C;
+    color: red;
 }
 a:hover {
     text-decoration: none;
     color: white;
 }
 h1, h2 {
-    font-family: 'Caveat', cursive;
+    font-family: 'Algerian', cursive;
     font-weight: 400;
 }
 h1 {
@@ -30,6 +30,15 @@ h1 {
 h2 {
     font-size: 40px;
     margin-top: 0;
+}
+h3 {
+    font-family: 'Tangerine', cursive;
+    text-decoration: underline;
+    font-weight: lighter;
+    text-decoration-style: wavy;
+    font-size: 40px;
+    line-height: 1px;
+    
 }
 .content-wrap {
     max-width: 950px;
@@ -79,6 +88,7 @@ header {
 /* Footer styles only */
 footer {
     text-align: center;
+    font-family: 'Kumar One Outline', cursive;
 }
 .contact-info a {
     padding: 10px;
@@ -110,6 +120,13 @@ footer {
 /* Title background 
 ------------------------------------*/
 .titleBackground {
-    background: SeaShell;
+    background: seashell;
+    text-align: center;
+}
+
+
+.footerText {
+    font-family: 'Kumar One Outline', cursive;
+    font-size: 30px;
 }
 
