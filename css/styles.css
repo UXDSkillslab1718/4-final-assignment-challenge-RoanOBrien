@@ -2,61 +2,61 @@
 ------------------------------------*/
 /* border box fix */
 html {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 *, *:before, *:after {
-  box-sizing: inherit;
+    box-sizing: inherit;
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
-  margin: 0;
-  color: cadetblue;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    color: cadetblue;
 }
 a {
     color: #EF233C;
 }
 a:hover {
     text-decoration: none;
+    color: white;
 }
 h1, h2 {
-  font-family: 'Caveat', cursive;
-  font-weight: 400;
+    font-family: 'Caveat', cursive;
+    font-weight: 400;
 }
 h1 {
-  font-size: 80px;
+    font-size: 80px;
 }
 h2 {
-  font-size: 40px;
-  margin-top: 0;
+    font-size: 40px;
+    margin-top: 0;
 }
 .content-wrap {
-  max-width: 950px;
-  margin: 0 auto;
-  padding: 50px;
-  overflow: hidden;
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 50px;
+    overflow: hidden;
 }
 
 .column-narrow {
-  width: 35%;
-  float: left;
-  padding-right: 3%;
-  min-height: 175px;
+    width: 35%;
+    float: left;
+    padding-right: 3%;
+    min-height: 175px;
 }
 .column-wide {
-  width: 62%;
-  float: left;
-  min-height: 175px;
+    width: 62%;
+    float: left;
+    min-height: 175px;
 }
-
 
 
 /* Header & Footer 
 ------------------------------------*/
 header, 
 footer {
-  background: Darkcyan;
-  color: #8D99AE;
+    background: Darkcyan;
+    color: powderblue;
 }
 header h1,
 header h2 {
@@ -69,32 +69,47 @@ header {
   /*text-align: center;*/
 }
 .profile-img {
-  /*width: 300px;*/
-  border-radius: 50%;
-  /*float: left;*/
-  /*margin-right: 30px;*/
+    width: 205px;
+    height: 205px;
+    border-radius: 50%;
+    float: left;
+    margin-right: 30px;
 }
 
 /* Footer styles only */
 footer {
-  text-align: center;
+    text-align: center;
 }
 .contact-info a {
-  padding: 10px;
-  display: inline-block;
+    padding: 10px;
+    display: inline-block;
 }
-
 
 
 /* Work Experience
 ------------------------------------*/
 .work {
-    background: #EDF2F4;
+    background: seashell;
 }
 
 
 /* Education
 ------------------------------------*/
 .education {
-    background: #8D99AE;
+    background: seashell;
 }
+
+
+/* Hobbies
+------------------------------------*/
+.hobbies {
+    background: seashell;
+}
+
+
+/* Title background 
+------------------------------------*/
+.titleBackground {
+    background: SeaShell;
+}
+
