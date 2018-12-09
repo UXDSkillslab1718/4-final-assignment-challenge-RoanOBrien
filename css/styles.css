@@ -55,18 +55,6 @@ h3 {
     overflow: hidden;
 }
 
-.column-narrow {
-    width: 30%;
-    float: left;
-    min-height: 150px;
-}
-
-.column-wide {
-    width: 70%;
-    float: left;
-    min-height: 150px;
-    padding-left: 10px;
-}
 .uppercase {
     text-transform: uppercase;
 }
@@ -94,12 +82,12 @@ header h2 {
     margin: 0;
 }
 
+
 /* Header styles only */
 header {
     padding-top: 50px;
     position: relative;
 }
-
 .profile-img {
     width: 205px;
     height: 205px;
@@ -111,6 +99,8 @@ header {
     bottom: 0;
     right: 0;
 }
+
+
 /* Footer styles only */
 footer {
     text-align: center;
@@ -121,6 +111,7 @@ footer {
     padding: 10px;
     display: inline-block;
 }
+
 
 /*navigation
 ------------------------------------*/
@@ -140,6 +131,7 @@ nav a {
     font-family: 'Arial', sans-serif;
     color: powderblue;
 }
+
 
 /* Work Experience
 ------------------------------------*/
@@ -167,7 +159,8 @@ p + h3 {
 /* Hobbies
 ------------------------------------*/
 .hobbies {
-    background: seashell;
+    background: linear-gradient(rgba(100, 96, 93, 2.0), rgba(100, 96, 93, 0.3)), url(../images/boodlogo.jpg) no-repeat fixed;
+    background-size: cover;
     margin: 0px;
 }
 
@@ -175,7 +168,6 @@ p + h3 {
 /* Title background 
 ------------------------------------*/
 .titleBackground {
-    background: seashell;
     text-align: center;
 }
 
@@ -184,3 +176,34 @@ p + h3 {
     font-family: 'Arial', cursive;
     font-size: 30px;
 }
+
+
+/* Media Queries
+------------------------------------*/
+@media (min-width: 900px){
+    
+.column-narrow {
+    width: 30%;
+    float: left;
+    min-height: 150px;
+}
+
+.column-wide {
+    width: 70%;
+    float: left;
+    min-height: 150px;
+    padding-left: 10px;
+}
+}
+@media (max-width: 899px){
+    header{
+        text-align: center;
+    }
+    .profile-img{
+        width: 150px;
+        height: 150px;
+    }
+}
+
+
+
