@@ -4,7 +4,10 @@
 html {
     box-sizing: border-box;
 }
-*, *:before, *:after {
+
+*,
+*:before,
+*:after {
     box-sizing: inherit;
 }
 
@@ -13,32 +16,40 @@ body {
     margin: 0;
     color: cadetblue;
 }
+
 a {
     color: red;
 }
+
 a:hover {
     text-decoration: none;
     color: white;
 }
-h1, h2 {
+
+h1,
+h2 {
     font-family: 'Algerian', cursive;
     font-weight: 400;
 }
+
 h1 {
     font-size: 80px;
 }
+
 h2 {
     font-size: 40px;
     margin-top: 0;
 }
+
 h3 {
     font-family: 'Arial', cursive;
     font-weight: 400;
     font-size: 30px;
+    margin: 0;
 }
 
 .content-wrap {
-    max-width: 950px;
+    max-width: 850px;
     margin: 0 auto;
     padding: 50px;
     overflow: hidden;
@@ -47,23 +58,28 @@ h3 {
 .column-narrow {
     width: 30%;
     float: left;
-    min-height: 205px;
+    min-height: 150px;
 }
+
 .column-wide {
     width: 70%;
     float: left;
-    min-height: 205px;
+    min-height: 150px;
     padding-left: 10px;
+}
+.uppercase {
+    text-transform: uppercase;
 }
 
 
 /* Header & Footer 
 ------------------------------------*/
-header, 
+header,
 footer {
     background: Darkcyan;
     color: powderblue;
 }
+
 header h1,
 header h2 {
     color: #EDF2F4;
@@ -72,8 +88,9 @@ header h2 {
 
 /* Header styles only */
 header {
-  /*text-align: center;*/
+    padding-top: 50px;
 }
+
 .profile-img {
     width: 205px;
     height: 205px;
@@ -86,16 +103,41 @@ footer {
     text-align: center;
     font-family: 'Arial', cursive;
 }
+
 .contact-info a {
     padding: 10px;
     display: inline-block;
 }
 
+/*navigation
+------------------------------------*/
+nav {
+    text-align: center;
+    background: darkcyan;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+nav a {
+    display: inline-block;
+    padding: 15px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Arial', sans-serif;
+    color: powderblue;
+}
 
 /* Work Experience
 ------------------------------------*/
 .work {
     background: seashell;
+}
+h3 ~ p {
+    margin: 0;
+}
+.job-description p:first-of-type {
+    margin-top: 0;
 }
 
 
@@ -103,6 +145,9 @@ footer {
 ------------------------------------*/
 .education {
     background: seashell;
+}
+p + h3 {
+    margin-top: 30px;
 }
 
 
@@ -126,4 +171,3 @@ footer {
     font-family: 'Arial', cursive;
     font-size: 30px;
 }
-
