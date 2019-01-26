@@ -174,9 +174,10 @@ p + h3 {
 /* Hobbies
 ------------------------------------*/
 .hobbies {
-    background: linear-gradient(rgba(100, 96, 93, 2.0), rgba(100, 96, 93, 0.3)), url(../images/boodlogo.jpg) no-repeat fixed;
+    background: linear-gradient(rgba(100, 96, 93, 2.0), rgba(100, 96, 93, 0.3)), url(../images/liquicity.png) no-repeat fixed;
     background-size: cover;
     margin: 0px;
+    color:seashell;
 }
 
 
