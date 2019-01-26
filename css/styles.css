@@ -53,7 +53,7 @@ h3 {
 }
 
 .content-wrap {
-    max-width: 850px;
+    max-width: 1050px;
     margin: 0 auto;
     padding: 60px 50px;
     overflow: hidden;
@@ -174,12 +174,32 @@ p + h3 {
 /* Hobbies
 ------------------------------------*/
 .hobbies {
-    background: linear-gradient(rgba(100, 96, 93, 2.0), rgba(100, 96, 93, 0.3)), url(../images/liquicity.png) no-repeat fixed;
+    background: linear-gradient(rgba(100, 96, 93, 2.0), rgba(100, 96, 93, 0.3)), url(../images/liquicity.png) no-repeat fixed center;
     background-size: cover;
     margin: 0px;
     color:seashell;
+    
 }
 
+
+.design {
+    background: seashell;
+}
+
+.visual {
+    background: darkcyan;
+    color: seashell;
+}
+
+/*Pictures
+------------------------------------*/
+.pic-left {
+    width: 48%;
+}
+.pic-right {
+    width: 48%;
+    float: right;
+}
 
 /* Title background 
 ------------------------------------*/
