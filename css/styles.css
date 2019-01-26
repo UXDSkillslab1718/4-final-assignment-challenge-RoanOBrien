@@ -26,6 +26,10 @@ a:hover {
     color: white;
 }
 
+a:visited {
+    text-decoration: underline;
+}
+
 h1,
 h2 {
     font-family: 'Algerian', cursive;
@@ -58,10 +62,11 @@ h3 {
 .uppercase {
     text-transform: uppercase;
 }
+
 .btn {
     text-decoration: none;
     background: red;
-    color: white;
+    color: black;
     padding: 10px;
     display: inline-block;
     font-family: 'Arial', sans-serif;
@@ -88,12 +93,14 @@ header {
     padding-top: 50px;
     position: relative;
 }
+
 .profile-img {
     width: 205px;
     height: 205px;
     border-radius: 50%;
     float: left;
 }
+
 .download {
     position: absolute;
     bottom: 0;
@@ -122,6 +129,7 @@ nav {
     top: 0;
     width: 100%;
 }
+
 nav a {
     display: inline-block;
     padding: 15px 20px;
@@ -132,15 +140,21 @@ nav a {
     color: powderblue;
 }
 
+nav a:visited {
+    background: black;
+}
+
 
 /* Work Experience
 ------------------------------------*/
 .work {
     background: seashell;
 }
+
 h3 ~ p {
     margin: 0;
 }
+
 .job-description p:first-of-type {
     margin-top: 0;
 }
@@ -151,6 +165,7 @@ h3 ~ p {
 .education {
     background: seashell;
 }
+
 p + h3 {
     margin-top: 30px;
 }
@@ -180,30 +195,29 @@ p + h3 {
 
 /* Media Queries
 ------------------------------------*/
-@media (min-width: 900px){
-    
-.column-narrow {
-    width: 30%;
-    float: left;
-    min-height: 150px;
+@media (min-width: 900px) {
+
+    .column-narrow {
+        width: 35%;
+        float: left;
+        min-height: 150px;
+    }
+
+    .column-wide {
+        width: 65%;
+        float: left;
+        min-height: 150px;
+        padding-left: 10px;
+    }
 }
 
-.column-wide {
-    width: 70%;
-    float: left;
-    min-height: 150px;
-    padding-left: 10px;
-}
-}
-@media (max-width: 899px){
-    header{
+@media (max-width: 899px) {
+    header {
         text-align: center;
     }
-    .profile-img{
+
+    .profile-img {
         width: 150px;
         height: 150px;
     }
 }
-
-
-
