@@ -12,40 +12,122 @@
 <body>
     <!-- // Intro -->
     <header class="header">
-        <nav>
+        <nav class="nav1">
             <img class="shadow profile-img-small" src="images/pfliquicity.jpg">
             <a href="projects.html">Back to projects</a>
             <a href="#Day1">Day 1</a>
-            <a href="#day2">Day 2</a>
-            <a href="#day3">Day 3</a>
-            <a href="#day4">Day 4</a>
-            <a href="#day5">Day 5</a>
+            <a href="#Day2">Day 2</a>
+            <a href="#Day3">Day 3</a>
+            <a href="#Day4">Day 4</a>
+            <a href="#Day5">Day 5</a>
         </nav>
     </header>
 
     <main>
         <section id="Day1" class="visual">
             <div class="content-wrap">
+                <h2>The first day</h2>
+                <p>On the first day of the programming boot camp we learned about shapes, colours and parameters in the processing program. We learned about various functions that can be used to create all kinds of shapes. For the assignment of the day we had to create something that was different every time you run the program, and yet still somehow the same every time. This could be related to shape, position or colour. I had created the shape of an “impossible triangle” and used the random() function to randomly determine the colour of the sides of the triangle, the size of the stroke, the colour of the circle on the background and related to that colour of the inner circle, being the opposite of the outer circle.</p>
+                
+                <p>As you can see the shapes are always the same size and in the same position in this little program. I did this because I created the triangle using the beginShape(), vertex() and endShape() functions. And in these functions it’s not possible to easily change the coordinates of the vertex points while not ruining the shape itself.
+                The random colours I got through using a random number generator between 0 and 255, and do that a couple times to get the RGB values. I did it again for the white/black background, and then inverted that colour for the smaller circle in the centre. The code uses a draw loop, which we hadn’t discussed on the first day before, but I added it in the weekend. On Friday my code looked exactly the same, but without the draw loop and the noLoop(); at the end.
+                Like previously mentioned, on Friday we learned about shapes, colours and variables (and parameters). To begin, we started learning how to create and change the canvas on which we would place shapes and colours and create the rest of our art. We learned that there are a lot of functions available within the processing program to use to create shapes of all kinds of sizes and forms. Some of these were the rect(x,y,w,h), ellipse(x, y, w, h), point(x, y) and line(x1, y1, x2, y2). These shapes could be assigned colours via the fill() function. Giving the fill(x) a value for x between 0 and 255 would give the following shapes a shade of colour. RGB colours could be given via the fill(R, G, B) function. Adding an extra value to either of these two fill functions would decide it’s opacity.
+                These values are parameters, given to the functions to decide for various things such as colours, thicknesses (like in strokeWeight(x)) and other attributes. These could come in handy when assigning multiple varieties of the same function with different values.
+                Finally we learned about data types, and there being quite a couple of them, namely: int, float, char, string, image, color, Boolean, text etc.</p>
+
             </div>
         </section>
         
         <section id="Day2" class="design">
             <div class="content-wrap">
+                <h2>The second day</h2>
+                <p>On day 2 of the bootcamp we talked about flow, conditionals and interactivity. A big part of this was the game loop, which we used at the end to create a small interactive game. We learned that a program reads code from top to bottom, but that certain functions could be run over and over by the program until told to stop. For day 2 that mainly consisted of the draw() function, which draws everything inside its curly brackets over and over until a noLoop() function is called to end it, or the program is exited entirely manually. 
+
+                Also we learned about conditionals such as the lesser than and greater than signs, == (equal to)and != (not equal to). We learned that you could use these conditional statements in combination with an if() statement to test the program on certain things so that it only executes a piece of code when it meets the requirements given by the if() statement. Also an “else” statement could be added to have the program do either one or the other between two options.
+                It would look like: 
+
+                If(test) {
+                    Statement;
+                } else {
+                    Statement;
+                }
+
+                Finally we talked about interactivity and the fact that you could use functions such as keyPressed() and mouseClicked() to create interactivity between the program and the user. Using these kind of functions in combination with conditional statements one could create an easy game, which we attempted in the afternoon. 
+
+                I myself tried to recreate a form of Pacman, but more in the shape of snake. I created a Pacman figure that could eat pieces of food (red dots). And when that would be successfully done, the score increments by one. I only did not really figure out how to get the food to spawn every time the last one was eaten by Pacman, and incrementing the score both. So far the food keeps spawning, so I think I’m just missing a small bit of coding for it to work. Pacman could be moved using the WASD keys, with W moving him up, A moving him to the left, S down and D to the right. Also Pacman would face a different side depending on which way he’s going. I plan on maybe adding obstacles that would be randomly generated along with the food, once I get the food to work properly.
+                </p>
             </div>
         </section>
         
         <section id="Day3" class="visual">
             <div class="content-wrap">
+                <h2>The third day</h2>
+                <p>On the third day we talked about iteration and ways to repeat pieces of code other than using a game loop, though it does seem to work very similarly to that loop. We learned about while() and for() loops. Both of them executing a specific piece of coding as long as the requirements within the parentheses are met. 
+
+                The important thing in a loop is that it starts by initialising a piece of code, and then it tests something whether or not it’s true, executes an action and updates the loop, then it hops back to “test” to check again whether or not the action should be executed. A cool thing is that loops can be used in loops and that can go pretty deep. You call this nested loops. 
+
+                Another important thing we talked about was creating one’s own functions and calling them in other parts of the program, this would allow the programmer to only have to write one piece of code if that code would be needed in multiple places in the program. He would then only have to call that function for it to execute that piece of code again.
+
+                The assignment for the day was to create an interactive thing using loops, and methods. I created a program that would keep generating circles (ellipses with the same width as height) over and over, and after 300 iterations would start to draw lines from one corner of the canvas to the opposite. The user can interact with it by pressing ‘d’ to change the corners from which the lines are generated. Also by pressing the mouse button an overlaying very transparent shape would let it seem as though the circles and lines fade away. </p>
+                
+                <p>The difference between the two pictures is that the second is made just after the mouse was pressed for a while. Therefore some of the shapes and lines that were created the earliest were not visible as well anymore and faded to the background. And like mentioned above, when the ‘d’ key is pressed the lines would come from the other corners. I used a couple functions (for example to make the ellipses and to change the direction of the lines) and called them within the draw loop.</p>
             </div>
         </section>
         
         <section id="Day4" class="design">
             <div class="content-wrap">
+                <h2>The fourth day</h2>
+                <p>On the fourth day we only talked about arrays, and how arrays could be used to make using similar pieces of code way easier than having to copy paste them every time. An array is a list of items, these could be all kinds of data types such as integers, floats, chars and strings. An array could even be a list of other arrays, making it an array of arrays. We did not discuss arrays of arrays a lot though, since it can be quite difficult to understand.
+                To create an array you first need to declare that the array will exist, then create it, and then assign values to the open spots in the array. There are three ways of doing this.
+
+                1st way:
+
+                Int[] arrayOne;	//declares that the array with name arrayOne exists and has integers as data types.
+                arrayOne = new int[6];	//creates the array and gives it six variables to hold information.
+                arrayOne[0] = 19; (etc.)	//assigns a value to the first spot in the array. Note that they start counting from 0 instead of 1. 
+
+                2nd way:
+
+                Int[] arrayOne = new int [5];	//declares and creates the array in one line of code. Instead of 2. 
+                arrayOne[0] = 19; (etc.)	//assigns values for the first and following spots in the array.
+
+                3rd way (and shortest way):
+
+                Int[] arrayOne = {19, 34, 76, 65, 8, 93};	//declares, creates and assigns in one line of code. The numbers (or other variables) within the curly brackets are the values that will be stored in the array. This array will hold six values, with 19 being on the first spot (index 0), 34 on the second (index 1) etc.
+
+                Finally we learned how to use arrays to get information from them and use that for something
+                useful. Such as using a for loop to print all the values in an array.
+
+                The program of the day that we had to make was again a small game. I went and tried to make cube 
+                field, a game in which you have to evade blocks that come your way. Since using 3D objects was still
+                a little too difficult I opted to make a 2D version of the game. The goal was to use arrays since that 
+                was the topic of the day. I ended up using an array to determine the location of the blocks and to be 
+                able to keep that location stored so that it would not disappear continuously. However I had trouble
+                figuring out how to make multiple blocks appear and stay on screen again. Also the controls were 
+                still quite clunky because I did not have enough time to optimise them.</p>
             </div>
         </section>
         
-        <section id="Day5" class="design">
+        <section id="Day5" class="visual">
             <div class="content-wrap">
+                <h2>The fifth day</h2>
+                <p>On the fifth day we did not discuss any new topics, instead the task for the final day was to create 
+                something that would make the teachers proud. We had to use all the things we had learned in the
+                previous days (so loops, conditionals, interactivity, shapes and colour and arrays). We were allowed
+                to continue working on the game from day 4, but I chose to start creating a new game. The game I 
+                wanted to make in particular was a Space Invaders type of game. I had a main character that follows 
+                the user’s mouse movement with a small delay, an enemy that would spawn at a random place on 
+                the right hand side of the screen and then the user would have to shoot them to score points. I used 
+                sprites I got from internet to make it more aesthetically pleasing, also I figured out how to implement 
+                sound into the game, so I was able to give the game laser sounds and the Star Wars soundtrack. 
+                Again to make it more engaging for the user. The only major problem I had was that whenever an 
+                enemy space ship would get past the player, a new one should spawn, but didn’t. This made for the 
+                game to keep running after the actual Game Over. The only reason for this being that I did not have 
+                enough time to implement a Game Over screen/text. </p>
+                
+                <p>I did all of this using various functions for each feature such as the enemies spawning, point scoring, 
+                and other features. Furthermore I used arrays, for loops and if statements. And obviously I used 
+                shapes and colours to create all of the objects everywhere. </p>
             </div>
         </section>
     </main>
