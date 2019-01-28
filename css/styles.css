@@ -71,9 +71,11 @@ h4 {
     padding-right: 10%;
     padding-bottom: 20px;
 }
+
 .shadow {
-    box-shadow: 0px 6px 13px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 6px 13px 0px rgba(0, 0, 0, 0.2);
 }
+
 .rounded {
     border-radius: 12px;
 }
@@ -99,10 +101,12 @@ h4 {
     background: darkcyan;
     color: powderblue;
 }
+
 .header2 {
     background: seashell;
     color: powderblue;
 }
+
 footer {
     background: Darkcyan;
     color: powderblue;
@@ -119,6 +123,7 @@ header h2 {
     font-size: 55px;
     text-align: center;
 }
+
 .center-text {
     text-align: center;
     font-size: 55px;
@@ -188,10 +193,13 @@ nav a {
     font-weight: bold;
     font-family: 'Arial', sans-serif;
     color: powderblue;
-    margin-right: 50px;
+    margin-right: 25px;
+    margin-left: 25px;
 }
+
 nav a:hover {
     background: cadetblue;
+    box-shadow: 0px -3px 16px 0px rgba(0, 0, 0, 0.2);
 }
 
 nav img {
@@ -203,14 +211,16 @@ nav img {
     background: seashell;
     color: darkcyan;
 }
+
 .nav2 a {
     color: darkcyan;
 }
+
 .nav2 a:hover {
     color: white;
 }
 
-.link-specific{
+.link-specific {
     display: inline-block;
     padding: 15px 20px;
     text-decoration: none;
@@ -223,17 +233,70 @@ nav img {
     margin-top: 20px;
     margin-bottom: -20px;
 }
-.link-specific a{
+
+.link-specific a {
     color: seashell;
     text-decoration: none;
     background: darkcyan;
     padding: 10px;
     border-radius: 12px;
 }
+
 .link-specific a:hover {
     color: white;
     background: cadetblue;
 }
+
+/* Dropdown menu styles
+------------------------------------*/
+.dropbtn {
+    background-color: darkcyan;
+    color: powderblue;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    font-weight: bold;
+    font-family: 'Arial', sans-serif;
+    text-transform: uppercase;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: seashell;
+    width: 100%;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: darkcyan;
+    padding: 15px 10px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: powderblue;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: cadetblue;
+    box-shadow: 0px -3px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
 
 
 
@@ -278,13 +341,16 @@ p + h3 {
 .design {
     background: seashell;
 }
+
 .visual {
     background: darkcyan;
     color: seashell;
 }
+
 .bootcamp {
     background: seashell;
 }
+
 .intro {
     background: darkcyan;
     color: seashell;
@@ -294,13 +360,13 @@ p + h3 {
 ------------------------------------*/
 .pic-left {
     width: 48%;
-    box-shadow: 0px 8px 16px 8px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 8px rgba(0, 0, 0, 0.2);
 }
 
 .pic-right {
     width: 48%;
     float: right;
-    box-shadow: 0px 8px 16px 8px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 8px rgba(0, 0, 0, 0.2);
 }
 
 .pic-center {
